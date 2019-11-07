@@ -28,11 +28,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="33"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <state key="normal" title="Next"/>
+                                        <connections>
+                                            <action selector="primaryButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nFX-ac-7SH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiC-ji-OFH">
                                         <rect key="frame" x="0.0" y="43" width="374" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="Cancel"/>
+                                        <state key="normal" title="Previous"/>
+                                        <connections>
+                                            <action selector="secondaryButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wcu-9i-JPI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -69,7 +75,7 @@
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="NNe-N3-tmE"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1cq-ce-0mj"/>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="1cq-ce-0mj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xhm-lu-JBe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

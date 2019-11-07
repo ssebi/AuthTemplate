@@ -18,6 +18,7 @@
 		9E5BDE712374737D00E44D9B /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5BDE702374737D00E44D9B /* EmailViewController.swift */; };
 		9E5BDE732374738E00E44D9B /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5BDE722374738E00E44D9B /* PhoneViewController.swift */; };
 		9E5BDE772374749500E44D9B /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5BDE762374749500E44D9B /* UIStoryboard+Extensions.swift */; };
+		9E5BDE7D23749F1E00E44D9B /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5BDE7C23749F1E00E44D9B /* UINavigationController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9E5BDE702374737D00E44D9B /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		9E5BDE722374738E00E44D9B /* PhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
 		9E5BDE762374749500E44D9B /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		9E5BDE7C23749F1E00E44D9B /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				9E5BDE762374749500E44D9B /* UIStoryboard+Extensions.swift */,
+				9E5BDE7C23749F1E00E44D9B /* UINavigationController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				9E5BDE5D23746A3800E44D9B /* ViewController.swift in Sources */,
 				9E5BDE712374737D00E44D9B /* EmailViewController.swift in Sources */,
 				9E5BDE772374749500E44D9B /* UIStoryboard+Extensions.swift in Sources */,
+				9E5BDE7D23749F1E00E44D9B /* UINavigationController+Extensions.swift in Sources */,
 				9E5BDE5923746A3800E44D9B /* AppDelegate.swift in Sources */,
 				9E5BDE6D2374724100E44D9B /* ContainerViewController.swift in Sources */,
 				9E5BDE5B23746A3800E44D9B /* SceneDelegate.swift in Sources */,

@@ -13,20 +13,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonsStack: UIStackView!
     @IBOutlet weak var primaryButton: UIButton!
     @IBOutlet weak var secondaryButton: UIButton!
-    
+
     // MARK: - Public Properties
+    private var containerViewController: ContainerViewController? {
+        ((self.children.first as? UINavigationController)?.viewControllers.first as? ContainerViewController)
+    }
 
     // MARK: - Private Properties
 
     // MARK: - ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // TODO: Not Implemented
+
     }
 
     // MARK: - Private Functions
 
     // MARK: - Public Functions
+    @IBAction func primaryButtonTapped(_ sender: Any) {
+        containerViewController?.goToNextViewController()
+    }
+
+    @IBAction func secondaryButtonTapped(_ sender: Any) {
+        containerViewController?.goToPreviousViewController()
+    }
 
 }
 

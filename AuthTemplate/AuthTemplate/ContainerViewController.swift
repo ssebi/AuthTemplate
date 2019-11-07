@@ -14,27 +14,60 @@ class ContainerViewController: UIViewController {
     // MARK: - Public Properties
 
     // MARK: - Private Properties
-    lazy private var nameViewController: NameViewController = {
-        return UIStoryboard.main.instantiateViewController(ofType: NameViewController.self)
-    }()
+    enum AuthViewControllers {
+        case name
+        case email
+        case phone
 
-    lazy private var emailViewController: EmailViewController = {
-        return UIStoryboard.main.instantiateViewController(ofType: EmailViewController.self)
-    }()
+        func initial() -> UIViewController {
+            switch self {
+                case .name:
+                    return UIStoryboard.main.instantiateViewController(ofType: NameViewController.self)
+                case .email:
+                    return UIStoryboard.main.instantiateViewController(ofType: EmailViewController.self)
+                case .phone:
+                    return UIStoryboard.main.instantiateViewController(ofType: PhoneViewController.self)
+            }
+        }
 
-    lazy private var phoneViewController: PhoneViewController = {
-        return UIStoryboard.main.instantiateViewController(ofType: PhoneViewController.self)
-    }()
+        mutating func next() -> UIViewController {
+            switch self {
+                case .name:
+                    self = .email
+                    return UIStoryboard.main.instantiateViewController(ofType: EmailViewController.self)
+                case .email:
+                    self = .phone
+                    return UIStoryboard.main.instantiateViewController(ofType: PhoneViewController.self)
+                case .phone:
+                    self = .name
+                    return UIStoryboard.main.instantiateViewController(ofType: NameViewController.self)
+            }
+        }
+    }
+
+    private var currentViewController: AuthViewControllers = .name
 
     // MARK: - ViewController Lifecycle
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        navigationController?.pushViewController(currentViewController.initial(), animated: false)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
     }
 
     // MARK: - Private Functions
 
     // MARK: - Public Functions
+    func goToNextViewController() {
+        navigationController?.push(viewController: currentViewController.next(), transitionType: .push, subtype: .fromRight)
+    }
+
+    func goToPreviousViewController() {
+        navigationController?.pop(transitionType: .push, subtype: .fromLeft)
+    }
 
 }
