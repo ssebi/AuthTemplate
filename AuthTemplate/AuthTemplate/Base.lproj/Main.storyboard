@@ -78,7 +78,7 @@
         <!--Let's get started-->
         <scene sceneID="khh-Vx-PWo">
             <objects>
-                <viewController id="7BK-X7-Ugo" customClass="NameViewController" customModule="AuthTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NameViewController" id="7BK-X7-Ugo" customClass="NameViewController" customModule="AuthTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MXg-vq-Npi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,7 +126,7 @@
         <!--Hi John-->
         <scene sceneID="zao-v3-8iE">
             <objects>
-                <viewController id="Gzg-KJ-n5N" customClass="EmailViewController" customModule="AuthTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EmailViewController" id="Gzg-KJ-n5N" customClass="EmailViewController" customModule="AuthTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nbi-mb-tR1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,7 +169,7 @@
         <!--Just one more thing-->
         <scene sceneID="P6u-3d-sip">
             <objects>
-                <viewController id="K5q-z7-jME" customClass="PhoneViewController" customModule="AuthTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhoneViewController" id="K5q-z7-jME" customClass="PhoneViewController" customModule="AuthTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B8z-L2-UF1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

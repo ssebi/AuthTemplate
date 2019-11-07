@@ -17,6 +17,7 @@
 		9E5BDE6F2374737600E44D9B /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5BDE6E2374737600E44D9B /* NameViewController.swift */; };
 		9E5BDE712374737D00E44D9B /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5BDE702374737D00E44D9B /* EmailViewController.swift */; };
 		9E5BDE732374738E00E44D9B /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5BDE722374738E00E44D9B /* PhoneViewController.swift */; };
+		9E5BDE772374749500E44D9B /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5BDE762374749500E44D9B /* UIStoryboard+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9E5BDE6E2374737600E44D9B /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		9E5BDE702374737D00E44D9B /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		9E5BDE722374738E00E44D9B /* PhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
+		9E5BDE762374749500E44D9B /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +66,13 @@
 		9E5BDE5723746A3800E44D9B /* AuthTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				9E5BDE752374748100E44D9B /* Extensions */,
 				9E5BDE74237473BC00E44D9B /* AuthViewControllers */,
 				9E5BDE5823746A3800E44D9B /* AppDelegate.swift */,
 				9E5BDE5A23746A3800E44D9B /* SceneDelegate.swift */,
 				9E5BDE5C23746A3800E44D9B /* ViewController.swift */,
-				9E5BDE5E23746A3800E44D9B /* Main.storyboard */,
 				9E5BDE6C2374724100E44D9B /* ContainerViewController.swift */,
+				9E5BDE5E23746A3800E44D9B /* Main.storyboard */,
 				9E5BDE6123746A3900E44D9B /* Assets.xcassets */,
 				9E5BDE6323746A3900E44D9B /* LaunchScreen.storyboard */,
 				9E5BDE6623746A3900E44D9B /* Info.plist */,
@@ -85,6 +88,14 @@
 				9E5BDE722374738E00E44D9B /* PhoneViewController.swift */,
 			);
 			path = AuthViewControllers;
+			sourceTree = "<group>";
+		};
+		9E5BDE752374748100E44D9B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9E5BDE762374749500E44D9B /* UIStoryboard+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 			files = (
 				9E5BDE5D23746A3800E44D9B /* ViewController.swift in Sources */,
 				9E5BDE712374737D00E44D9B /* EmailViewController.swift in Sources */,
+				9E5BDE772374749500E44D9B /* UIStoryboard+Extensions.swift in Sources */,
 				9E5BDE5923746A3800E44D9B /* AppDelegate.swift in Sources */,
 				9E5BDE6D2374724100E44D9B /* ContainerViewController.swift in Sources */,
 				9E5BDE5B23746A3800E44D9B /* SceneDelegate.swift in Sources */,

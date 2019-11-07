@@ -14,11 +14,23 @@ class ContainerViewController: UIViewController {
     // MARK: - Public Properties
 
     // MARK: - Private Properties
+    lazy private var nameViewController: NameViewController = {
+        return UIStoryboard.main.instantiateViewController(ofType: NameViewController.self)
+    }()
+
+    lazy private var emailViewController: EmailViewController = {
+        return UIStoryboard.main.instantiateViewController(ofType: EmailViewController.self)
+    }()
+
+    lazy private var phoneViewController: PhoneViewController = {
+        return UIStoryboard.main.instantiateViewController(ofType: PhoneViewController.self)
+    }()
 
     // MARK: - ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // TODO: Not Implemented
+
+        
     }
 
     // MARK: - Private Functions
