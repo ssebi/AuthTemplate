@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ContainerViewController.swift
 //  AuthTemplate
 //
 //  Created by Sebastian Vidrea on 07/11/2019.
@@ -8,12 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ContainerViewController: UIViewController {
     // MARK: - IBOutlets
-    @IBOutlet weak var buttonsStack: UIStackView!
-    @IBOutlet weak var primaryButton: UIButton!
-    @IBOutlet weak var secondaryButton: UIButton!
-    
+
     // MARK: - Public Properties
 
     // MARK: - Private Properties
@@ -29,4 +26,3 @@ class ViewController: UIViewController {
     // MARK: - Public Functions
 
 }
-

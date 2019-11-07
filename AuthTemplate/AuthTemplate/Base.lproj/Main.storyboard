@@ -18,7 +18,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uoK-39-3XB">
                                 <rect key="frame" x="20" y="64" width="374" height="646"/>
                                 <connections>
-                                    <segue destination="zMh-RS-tFo" kind="embed" id="RUF-Hr-QUW"/>
+                                    <segue destination="RqJ-g4-Sti" kind="embed" id="RUF-Hr-QUW"/>
                                 </connections>
                             </containerView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6FA-dw-X1U">
@@ -49,30 +49,36 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonsStack" destination="6FA-dw-X1U" id="jRM-ba-1z7"/>
+                        <outlet property="primaryButton" destination="nxO-yg-hlg" id="ecL-Jl-ho6"/>
+                        <outlet property="secondaryButton" destination="ZiC-ji-OFH" id="e6W-Wm-PHJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--Container View Controller-->
         <scene sceneID="Wku-0D-LEY">
             <objects>
-                <viewController id="zMh-RS-tFo" sceneMemberID="viewController">
+                <viewController id="zMh-RS-tFo" customClass="ContainerViewController" customModule="AuthTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KbN-B6-P8V">
                         <rect key="frame" x="0.0" y="0.0" width="374" height="646"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="NNe-N3-tmE"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1cq-ce-0mj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xhm-lu-JBe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1037" y="139"/>
+            <point key="canvasLocation" x="1885.5072463768117" y="138.61607142857142"/>
         </scene>
         <!--Let's get started-->
         <scene sceneID="khh-Vx-PWo">
             <objects>
-                <viewController id="7BK-X7-Ugo" sceneMemberID="viewController">
+                <viewController id="7BK-X7-Ugo" customClass="NameViewController" customModule="AuthTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MXg-vq-Npi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,30 +121,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sS9-t3-Hck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2931.8840579710145" y="95.758928571428569"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Hsz-Fi-w0n">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PWj-OZ-oyk" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ygC-oY-rKj">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="7BK-X7-Ugo" kind="relationship" relationship="rootViewController" id="Ukg-zX-ow4"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qjq-Ki-nu5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2024.6376811594205" y="95.758928571428569"/>
+            <point key="canvasLocation" x="138" y="879"/>
         </scene>
         <!--Hi John-->
         <scene sceneID="zao-v3-8iE">
             <objects>
-                <viewController id="Gzg-KJ-n5N" sceneMemberID="viewController">
+                <viewController id="Gzg-KJ-n5N" customClass="EmailViewController" customModule="AuthTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nbi-mb-tR1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,12 +164,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cle-ap-334" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3997" y="96"/>
+            <point key="canvasLocation" x="1200" y="879"/>
         </scene>
         <!--Just one more thing-->
         <scene sceneID="P6u-3d-sip">
             <objects>
-                <viewController id="K5q-z7-jME" sceneMemberID="viewController">
+                <viewController id="K5q-z7-jME" customClass="PhoneViewController" customModule="AuthTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B8z-L2-UF1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,7 +207,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1h-D6-fDp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5028" y="96"/>
+            <point key="canvasLocation" x="2235" y="879"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NRt-zr-vgi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RqJ-g4-Sti" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ojx-xK-f6R">
+                        <rect key="frame" x="0.0" y="44" width="374" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zMh-RS-tFo" kind="relationship" relationship="rootViewController" id="rtA-aF-lnu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mdm-fb-c2S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036.231884057971" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>
